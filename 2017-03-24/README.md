@@ -1,4 +1,4 @@
-# PHP 命名空间 (namespace)
+# PHP 命名空间
 ## 简介
 PHP 命名空间(namespace)是在PHP 5.3中加入的。
 

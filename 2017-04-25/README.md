@@ -1,3 +1,5 @@
+# 使用 postMessage 实现跨域通信
+
 ## 介绍
 postMessage（message,targetOrigin）方法是 html5 新引进的特性，可以使用它来向其它的 window 对象发送消息，无论这个 window 对象是属于同源或不同源，目前 IE8+、FireFox、Chrome、Opera 等浏览器都已经支持 postMessage 方法。
 

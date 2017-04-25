@@ -21,6 +21,6 @@ html5新增了onmessage事件，它和onclick之类用法差不多。当窗口�
 - ie8，ie9下传递的数据类型值支持字符串类型，不过可以使用用 JSON对象和字符串之间的相互转换 来解决这个问题；
 - ie6，ie7需要写兼容方案，个人认为window.name比较靠谱；
 
-参考：
+## 参考
 - [html5 API postMessage跨域详解](https://github.com/tsrot/study-notes/blob/master/html5%20API%20postMessage%E8%B7%A8%E5%9F%9F%E8%AF%A6%E8%A7%A3.md)
 - [使用window.postMessage实现跨域通信](http://www.css88.com/archives/4720)

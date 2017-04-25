@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<button id="my-button">click</button>
+<script>
+  var messageEvent
+  var myButton = document.getElementById('my-button')
+
+  myButton.onclick = function () {
+    messageEvent.source.postMessage('received: ' + messageEvent.data, messageEvent.origin)
+  }
+
+  window.onmessage = function (e) {
+    messageEvent = e
+  }
+</script>
+</body>
+</html>

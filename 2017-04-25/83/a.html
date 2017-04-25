@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<input id="my-input" type="text">
+<script>
+  var myInput = document.getElementById('my-input')
+
+  function load() {
+    var origin = "http://127.0.0.1:84"
+    window.b.postMessage('Hello, b!', origin)
+  }
+
+  window.onmessage = function (e) {
+    e = e || event
+    myInput.value = e.data
+  }
+</script>
+<iframe src="http://127.0.0.1:84/b.html" name="b" onload="load()"></iframe>
+</body>
+</html>

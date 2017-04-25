@@ -1,4 +1,4 @@
-var SingletonTest = (function () {
+var singleton = (function () {
   function Singleton(args) {
     var args = args || {}
 
@@ -9,7 +9,6 @@ var SingletonTest = (function () {
   var instance
 
   return {
-    name: 'SingletonTester',
     getInstance: function (args) {
       if (typeof instance === 'undefined') {
         instance = new Singleton(args)
@@ -20,5 +19,5 @@ var SingletonTest = (function () {
   }
 })()
 
-var singletonTester = SingletonTest.getInstance({pointY: 5})
-console.log(singletonTester.pointX)
+var singletonInstance = singleton.getInstance({pointY: 5})
+console.log(singletonInstance.pointX, singletonInstance.pointY)
